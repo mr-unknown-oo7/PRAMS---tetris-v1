@@ -1,0 +1,1 @@
+This is a project to build an entire processor from the very scratch all the way upto running a tetris game on it. This entire project is absed on the nand to tetris coursework of Hebrew University of jerusalem.
