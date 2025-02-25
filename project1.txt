@@ -1,0 +1,23 @@
+This file is the description about the project 1 of the nand to tetris project part 1. In this project 15 chips would be defined. The 15 chips are as follows :
+
+1  Nand (given)
+2  Not
+3  And
+4  Xor
+5  Mux
+6  DMux
+7  Not (16 bit)
+8  And (16 bit)
+9  Or (16bit)
+10 Mux (16 bit)
+11 Or (8 Way)
+12 Mux (16 bit) (4 way)
+13 Mux (16 bit) (8 way)
+14 DMux (4 way)
+15 DMux (8 way)
+
+The nand gate will not be implemented as it is given and it is a fundamental gate
+
+The each file will be implemented as stored as .hdl file. Further each file would be tested using the respective .tst file and compared usign .cmp file
+
+
