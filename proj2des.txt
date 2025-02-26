@@ -1,0 +1,9 @@
+This is a test file that contains the descrition about the project 2.
+
+The intent of the project 2 is to design the chips required to carry out arithmetic addition ending in the design of an ALU.
+
+1  Halfadder
+2  FullAdder
+3  Add16
+4  Inc16
+5  ALU
