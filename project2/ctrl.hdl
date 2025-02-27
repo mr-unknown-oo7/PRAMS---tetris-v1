@@ -1,0 +1,31 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/1/And.hdl
+/**
+ * And gate:
+ * if (a and b) out = 1, else out = 0 
+ */
+CHIP ctrl {
+    IN in[16] , zer , pos;
+    OUT ng , zr;
+    
+    PARTS:
+    Mux(a = zer , b = pos , sel = in[15] ,out = ng);
+	Or(a = in[0] , b = in[1] , out = op0);
+	Or(a = in[2] , b = op0 , out = op1);
+	Or(a = in[3] , b = op1 , out = op2);
+	Or(a = in[4] , b = op2 , out = op3);
+	Or(a = in[5] , b = op3 , out = op4);
+	Or(a = in[6] , b = op4 , out = op5);
+	Or(a = in[7] , b = op5 , out = op6);
+	Or(a = in[8] , b = op6 , out = op7);
+	Or(a = in[9] , b = op7 , out = op8);
+	Or(a = in[10] , b = op8 , out = op9);
+	Or(a = in[11] , b = op9 , out = op10);
+	Or(a = in[12] , b = op10 , out = op11);
+	Or(a = in[13] , b = op11 , out = op12);
+	Or(a = in[14] , b = op12 , out = op13);
+	Or(a = in[15] , b = op13 , out = op14);
+    Mux(a = pos , b = zer , sel = op14 ,out = zr);
+}
